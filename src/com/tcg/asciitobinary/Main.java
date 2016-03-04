@@ -1,13 +1,13 @@
 package com.tcg.asciitobinary;
 
 
-
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -49,6 +49,7 @@ public class Main extends Application {
 		
 		scene = new Scene(layout);
 		window.setScene(scene);
+		window.getIcons().add(new Image(this.getClass().getResourceAsStream("icon.png")));
 		window.show();
 		
 	}

@@ -2,6 +2,7 @@ package com.tcg.asciitobinary;
 
 import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
 import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -31,6 +32,7 @@ public class Result {
 		Scene scene = new Scene(layout);
 		
 		window.setScene(scene);
+		window.getIcons().add(new Image(this.getClass().getResourceAsStream("icon.png")));
 		window.show();
 	}
 	
