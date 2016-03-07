@@ -27,7 +27,8 @@ public class Result {
 		
 		StackPane layout = new StackPane();
 		layout.getChildren().addAll(textArea);
-		layout.setPrefSize(textHolder.getLayoutBounds().getWidth() * 1.5, textArea.getPrefHeight());
+		System.out.println();
+		layout.setPrefSize(layout.getPrefWidth(), textArea.getPrefHeight());
 		
 		Scene scene = new Scene(layout);
 		
